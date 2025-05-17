@@ -29,7 +29,7 @@ jobs:
         pyinstaller --onefile i_plot.py
 
     - name: Upload EXE artifact
-      uses: actions/upload-artifact@v2.3.1  # ← ここをv2に修正！
+      uses: actions/upload-artifact@v2 # 通常形式
       with:
         name: i_plot.exe
         path: dist/i_plot.exe
